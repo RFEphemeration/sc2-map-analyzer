@@ -1,0 +1,85 @@
+#######################################
+#
+#  Openness measures, for some playable cell,
+#  the distance in cells to the nearest 
+#  unpathable cell.  Openness is rendered on
+#  a gradient color scale, so use this constant
+#  to set what openness value renders at the end
+#  end of the color scale.  Larger openness values
+#  appear the same color as the max.
+#
+#######################################
+float opennessRenderMax = 14.0
+
+
+
+#####################################
+#
+#  for iGrok's openness scheme
+#
+#####################################
+int numOpennessGradientColors = 2
+
+
+int influenceHeatMapRepeat    = 6
+
+int influenceHeatMapBlendMode = 1
+#int influenceHeatMapBlendMode = 2
+
+
+
+#######################################
+#
+#  
+#
+#######################################
+float minInfluenceToConsiderNatOrThird = 47.0
+
+
+float baseAvgOpennessNeighborhoodRadius = 12.0
+
+
+
+float chokeDetectionThreshold = 12.0
+float chokeDetectionAgreement = 7.0
+
+
+float spaceInMainChokeRadius = 8.0
+
+float inMainBaseRadius = 6.0
+
+
+float opennessElevLowSaturation  = 0.75
+float opennessElevHighSaturation = 1.25
+
+
+
+#######################################
+#
+#  These constants should add up to 1.0
+# 
+#######################################
+#float influenceWeightGround = 0.70
+#float influenceWeightCWalk  = 0.10
+#float influenceWeightAir    = 0.20
+
+float influenceWeightGround = 1.0
+float influenceWeightCWalk  = 0.0
+float influenceWeightAir    = 0.0
+
+#float influenceWeightGround = 0.0
+#float influenceWeightCWalk  = 0.0
+#float influenceWeightAir    = 1.0
+
+
+
+#######################################
+#
+#  Some analysis constants are based on
+#  game data that the map analyzer has
+#  no access to.  These values shouldn't
+#  change much if ever.
+#
+#######################################
+float defaultMineralAmount = 1500
+float defaultGeyserAmount  = 2500

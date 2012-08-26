@@ -1,0 +1,21 @@
+# to-analyze.txt
+
+# This config file is only recognized globally, meaning it is
+# only read by the map analyzer if it is in the same directory
+# as the EXECUTABLE (not the same directory as a shortcut to
+# executable)
+
+
+# List any number of specific maps to analyze, and use the # character
+# to comment out lines:
+
+C:\BLAH\BLAH\A Map That Will Be Analyzed.SC2Map
+#C:\BLAH\BLAH\CommentOut-WontBeAnalyzed.SC2Map
+
+
+# If a directory is listed, all maps in it are analyzed.
+C:\BLAB\BLAH\ADirectoryOfMaps
+
+# put an 'r' in front of a directory if you want the map analyzer to
+# recursively search that directory for maps to analyze
+r C:\BLAB\BLAB\AnalyzeThisDirAndSubDirs

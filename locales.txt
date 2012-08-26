@@ -1,0 +1,18 @@
+# This file (locales.txt) tells sc2mapanalyzer the
+# order of locales you prefer.  The first one in your
+# preference list that is available in a map will be
+# used to grab the map name for use in output files.
+
+enUS
+enGB
+deDE
+frFR
+ruRU
+itIT
+esMX
+esES
+plPL
+ptBR
+koKR
+zhCN
+zhTW

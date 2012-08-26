@@ -1,0 +1,486 @@
+# This file gives the footprints for any placed objects
+# that block pathing for units.  So resources, watchtowers,
+# doodads, destructible rocks all have footprints.  If
+# more than one object have the same footprint they can
+# all be listed above the common footprint.
+
+
+
+
+doodad MonoTrackBend90_180
+{
+  0, -1
+}
+
+
+doodad MonoTrackBend90_180__rot90cw
+{
+  -1, -1
+}
+
+doodad MonoTrackBend90_180__rot180cw
+{
+  -1, 0
+}
+
+doodad MonoTrackBend90_180__rot270cw
+{
+  0, 0
+}
+
+
+
+# LoS should be in here as no builds
+
+
+resource MineralField
+resource RichMineralField
+resource HighYieldMineralField  # an old name
+{
+  0, 0
+ -1, 0
+}
+
+resource VespeneGeyser
+resource RichVespeneGeyser
+resource SpacePlatformGeyser
+doodad   CharCrystalHuge
+{
+-1, -1
+ 0, -1
+ 1, -1
+-1,  0
+ 0,  0
+ 1,  0
+-1,  1
+ 0,  1
+ 1,  1
+}
+
+
+nobuildmain MineralField
+nobuildmain RichMineralField
+nobuildmain HighYieldMineralField  # an old name
+{
+ -3, -3
+ -2, -3
+ -1, -3
+  0, -3
+  1, -3
+  2, -3
+ -4, -2
+ -3, -2
+ -2, -2
+ -1, -2
+  0, -2
+  1, -2
+  2, -2
+  3, -2
+ -4, -1
+ -3, -1
+ -2, -1
+ -1, -1
+  0, -1
+  1, -1
+  2, -1
+  3, -1
+ -4,  0
+ -3,  0
+ -2,  0
+ -1,  0
+  0,  0
+  1,  0
+  2,  0
+  3,  0
+ -4,  1
+ -3,  1
+ -2,  1
+ -1,  1
+  0,  1
+  1,  1
+  2,  1
+  3,  1
+ -4,  2
+ -3,  2
+ -2,  2
+ -1,  2
+  0,  2
+  1,  2
+  2,  2
+  3,  2
+ -3,  3
+ -2,  3
+ -1,  3
+  0,  3
+  1,  3
+  2,  3
+}
+
+
+nobuildmain VespeneGeyser
+nobuildmain RichVespeneGeyser
+nobuildmain SpacePlatformGeyser
+{
+  -3, -4
+  -2, -4
+  -1, -4
+   0, -4
+   1, -4
+   2, -4
+   3, -4
+  -4, -3
+  -3, -3
+  -2, -3
+  -1, -3
+   0, -3
+   1, -3
+   2, -3
+   3, -3
+   4, -3
+  -4, -2
+  -3, -2
+  -2, -2
+  -1, -2
+   0, -2
+   1, -2
+   2, -2
+   3, -2
+   4, -2
+  -4, -1
+  -3, -1
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+   2, -1
+   3, -1
+   4, -1
+  -4,  0
+  -3,  0
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0
+   2,  0
+   3,  0
+   4,  0
+  -4,  1
+  -3,  1
+  -2,  1
+  -1,  1
+   0,  1
+   1,  1
+   2,  1
+   3,  1
+   4,  1
+  -4,  2
+  -3,  2
+  -2,  2
+  -1,  2
+   0,  2
+   1,  2
+   2,  2
+   3,  2
+   4,  2
+  -4,  3
+  -3,  3
+  -2,  3
+  -1,  3
+   0,  3
+   1,  3
+   2,  3
+   3,  3
+   4,  3
+  -3,  4
+  -2,  4
+  -1,  4
+   0,  4
+   1,  4
+   2,  4
+   3,  4
+}
+
+
+
+losb     MarSaraCurtain
+destruct BraxisAlphaDestructible1x1
+doodad   PathingBlocker1x1Doodad
+{
+  0, 0
+}
+
+
+destruct BraxisAlphaDestructible2x2
+{
+   0,  0
+  -1,  0
+   0, -1
+  -1, -1
+}
+
+
+doodad BraxisAlphaBarrels
+{
+  0, 0
+}
+
+
+destruct DestructibleRock2x4Horizontal
+{
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0
+}
+
+
+
+destruct DestructibleRock2x4Vertical
+{
+  -1, -2
+   0, -2
+  -1, -1
+   0, -1
+  -1,  0
+   0,  0
+  -1,  1
+   0,  1
+}
+
+
+
+destruct DestructibleRock2x6Horizontal
+{
+  -3, -1
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+   2, -1
+  -3,  0
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0
+   2,  0
+}
+
+
+
+destruct DestructibleRock2x6Vertical
+{
+  -1, -3
+   0, -3
+  -1, -2
+   0, -2
+  -1, -1
+   0, -1
+  -1,  0
+   0,  0
+  -1,  1
+   0,  1
+  -1,  2
+   0,  2
+}
+
+
+
+destruct DestructibleRock4x4
+destruct DestructibleDebris4x4
+{
+  -2, -2
+  -1, -2
+   0, -2
+   1, -2
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0
+  -2,  1
+  -1,  1
+   0,  1
+   1,  1
+}
+
+
+destruct DestructibleRock6x6
+destruct DestructibleDebris6x6
+{
+  -2, -3
+  -1, -3
+   0, -3
+   1, -3
+  -3, -2
+  -2, -2
+  -1, -2
+   0, -2
+   1, -2
+   2, -2
+  -3, -1
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+   2, -1
+  -3,  0
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0
+   2,  0
+  -3,  1
+  -2,  1
+  -1,  1
+   0,  1
+   1,  1
+   2,  1
+  -2,  2
+  -1,  2
+   0,  2
+   1,  2
+}
+
+
+#////////////////////////////////////////////////
+#//
+#//  The huge destructible BL to UR:
+#//
+#//                 xx##
+#//               xx##@@##
+#//             xx##@@##xx
+#//           xx##@@##xx
+#//         xx##CC##xx
+#//       xx##@@##xx
+#//     xx##@@##xx
+#//   xx##@@##xx
+#//   ##@@##xx
+#//     ##xx
+#//
+#////////////////////////////////////////////////
+destruct DestructibleRampDiagonalHugeBLUR
+{
+  -4, -5
+  -3, -5
+  -5, -4
+  -4, -4
+  -3, -4
+  -2, -4
+  -5, -3
+  -4, -3
+  -3, -3
+  -2, -3
+  -1, -3
+  -4, -2
+  -3, -2
+  -2, -2
+  -1, -2
+   0, -2
+  -3, -1
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0
+   2,  0
+  -1,  1
+   0,  1
+   1,  1
+   2,  1
+   3,  1
+   0,  2
+   1,  2
+   2,  2
+   3,  2
+   4,  2
+   1,  3
+   2,  3
+   3,  3
+   4,  3
+   2,  4
+   3,  4
+}
+
+
+#////////////////////////////////////////////////
+#//
+#//  The huge destructible UL to BR:
+#//
+#//     ##xx
+#//   ##@@##xx
+#//   xx##@@##xx
+#//     xx##@@##xx
+#//       xx##@@CCxx
+#//         xx##@@##xx
+#//           xx##@@##xx
+#//             xx##@@##xx
+#//               xx##@@##
+#//                 xx##
+#//
+#////////////////////////////////////////////////
+destruct DestructibleRampDiagonalHugeULBR
+{
+   2, -5
+   3, -5
+   1, -4
+   2, -4
+   3, -4
+   4, -4
+   0, -3
+   1, -3
+   2, -3
+   3, -3
+   4, -3
+  -1, -2
+   0, -2
+   1, -2
+   2, -2
+   3, -2  
+  -2, -1
+  -1, -1
+   0, -1
+   1, -1
+   2, -1  
+  -3,  0
+  -2,  0
+  -1,  0
+   0,  0
+   1,  0  
+  -4,  1
+  -3,  1
+  -2,  1
+  -1,  1
+   0,  1
+  -5,  2
+  -4,  2
+  -3,  2
+  -2,  2
+  -1,  2
+  -5,  3
+  -4,  3
+  -3,  3
+  -2,  3
+  -4,  4
+  -3,  4
+}
+
+
+
+unit Observatory # old name
+unit XelNagaTower
+{
+  -1, -1
+   0, -1
+  -1,  0
+   0,  0
+}

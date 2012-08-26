@@ -1,0 +1,25 @@
+# output.txt
+
+# This file controls output options.  Lines that begin with
+# the '#' character are comments so those options are ignored.
+# Just uncomment the lines of output you want.  This file at
+# the global level will set a default for all maps analyzed.
+# If another copy of output.txt is in the same directory as
+# a map to analyze, the local copy will override the global copy.
+
+#renderTerrain   
+#renderPathing   
+#renderBases     
+#renderOpenness  
+#renderShortest  
+#renderInfluence 
+renderSummary   
+#writeCSVpermap
+
+# This option only has meaning in the global output.txt, it
+# will be ignored in a local output.txt
+#writeCSVaggr    
+
+# Set this path to have ALL OUTPUT of the analyzer be thrown
+# into a common directory.
+path=C:\A-PATH\sc2mapanalyzer-output
